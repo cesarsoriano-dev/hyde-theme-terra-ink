@@ -1,0 +1,30 @@
+$HOME/.config/rofi/theme.rasi
+* {
+    main-bg:            #18120Fe6;
+    main-fg:            #EDE0CEff;
+    main-br:            #DFA04Bff;
+    main-ex:            #D46A38ff;
+    select-bg:          #D46A38ff;
+    select-fg:          #18120Fff;
+    separatorcolor:     transparent;
+    border-color:       #DFA04Bff;
+}
+
+window {
+    border:             2px solid;
+    border-color:       #DFA04Bff;
+}
+
+element normal.normal,
+element alternate.normal,
+element-text,
+entry,
+prompt {
+    text-color:         #EDE0CEff;
+}
+
+element selected.normal,
+element-text selected {
+    background-color:   #D46A38ff;
+    text-color:         #18120Fff;
+}

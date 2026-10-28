@@ -1,0 +1,17 @@
+$HOME/.config/Kvantum/Wallbash/Wallbash.kvconfig
+[%General]
+alt_mnemonic=true
+left_tabs=true
+mirror_doc_tabs=true
+
+[GeneralColors]
+window.color=#18120F
+base.color=#211915
+alt.base.color=#281F1A
+button.color=#2C211B
+highlight.color=#D46A38
+text.color=#EDE0CE
+window.text.color=#EDE0CE
+button.text.color=#EDE0CE
+highlight.text.color=#18120F
+link.color=#DFA04B
