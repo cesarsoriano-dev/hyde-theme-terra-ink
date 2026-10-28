@@ -1,0 +1,199 @@
+$HOME/.config/waybar/theme.css|${scrDir}/wbarconfgen.sh
+@define-color bar-bg rgba(0, 0, 0, 0);
+@define-color main-bg #110C0A;
+@define-color main-fg #EDE0CE;
+@define-color wb-act-bg #D46A38;
+@define-color wb-act-fg #110C0A;
+@define-color wb-hvr-bg #C44D41;
+@define-color wb-hvr-fg #EDE0CE;
+
+/* === TERRA-INK BAD-BLOOD EDITION START === */
+
+/* 1. Armadura de las Cápsulas Principales (Borde Carmesí-Oro + Sombra Profunda) */
+window#waybar #custom-l_end,
+window#waybar #custom-r_end,
+window#waybar #workspaces,
+window#waybar #taskbar,
+window#waybar #window,
+window#waybar #cpu,
+window#waybar #memory,
+window#waybar #custom-cpuinfo,
+window#waybar #custom-gpuinfo,
+window#waybar #clock,
+window#waybar #backlight,
+window#waybar #network,
+window#waybar #pulseaudio,
+window#waybar #bluetooth,
+window#waybar #battery,
+window#waybar #tray,
+window#waybar #custom-updates,
+window#waybar #custom-power,
+window#waybar #custom-cliphist,
+window#waybar #custom-theme,
+window#waybar #custom-wallchange,
+window#waybar #custom-wbar {
+    background-color: #110C0A;
+    color: #EDE0CE;
+    border-top: 1px solid rgba(223, 160, 75, 0.55);
+    border-bottom: 2.5px solid #C44D41;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.85);
+}
+
+window#waybar #custom-l_end {
+    border-left: 2.5px solid #D46A38;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 6px;
+}
+
+window#waybar #custom-r_end {
+    border-right: 2.5px solid #DFA04B;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 14px;
+}
+
+/* 2. Workspaces Estilo Bad-Blood (Celdas oscuras + Píldora Activa Encendida) */
+window#waybar #workspaces {
+    padding: 2px 4px;
+}
+
+window#waybar #workspaces button {
+    background-color: #1E1511;
+    color: #B8A28A;
+    border: 1px solid rgba(212, 106, 56, 0.35);
+    border-radius: 8px 3px 8px 3px;
+    padding: 0px 9px;
+    margin: 4px 3px;
+    font-weight: 700;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+window#waybar #workspaces button.active {
+    background: linear-gradient(135deg, #C44D41 0%, #D46A38 50%, #DFA04B 100%);
+    color: #110C0A;
+    border: 1px solid #EDE0CE;
+    border-radius: 10px 3px 10px 3px;
+    font-weight: 900;
+    min-width: 34px;
+    padding: 0px 14px;
+    box-shadow: 0px 0px 12px rgba(196, 77, 65, 0.75);
+}
+
+window#waybar #workspaces button:hover {
+    background: #D46A38;
+    color: #110C0A;
+    border-color: #DFA04B;
+}
+
+/* 3. Reloj Sólido Invertido (Insignia Carmesí-Oro) */
+window#waybar #clock {
+    background: linear-gradient(135deg, #C44D41 0%, #D46A38 60%, #DFA04B 100%);
+    color: #110C0A;
+    font-weight: 900;
+    border-radius: 8px 3px 8px 3px;
+    margin: 4px 2px;
+    padding: 0px 12px;
+    box-shadow: 0px 0px 10px rgba(212, 106, 56, 0.5);
+}
+
+/* 4. CPU y Memoria con Acentos Cobre */
+window#waybar #cpu {
+    color: #DFA04B;
+    font-weight: 800;
+}
+
+window#waybar #memory {
+    color: #E69A6B;
+    font-weight: 800;
+}
+
+/* 5. Sub-Cápsulas de Conectividad (Wi-Fi, Bluetooth, Audio, Batería) */
+window#waybar #network {
+    background-color: rgba(212, 106, 56, 0.20);
+    color: #DFA04B;
+    border: 1px solid rgba(223, 160, 75, 0.50);
+    border-radius: 8px;
+    margin: 4px 3px;
+    padding: 0px 9px;
+    font-weight: 800;
+}
+
+window#waybar #bluetooth {
+    background-color: rgba(126, 148, 91, 0.20);
+    color: #A8C27E;
+    border: 1px solid rgba(150, 173, 114, 0.50);
+    border-radius: 8px;
+    margin: 4px 3px;
+    padding: 0px 9px;
+    font-weight: 800;
+}
+
+window#waybar #pulseaudio {
+    color: #E69A6B;
+    font-weight: 700;
+    padding: 0px 6px;
+}
+
+window#waybar #backlight {
+    color: #DFA04B;
+    font-weight: 700;
+}
+
+window#waybar #battery {
+    background-color: rgba(223, 160, 75, 0.16);
+    color: #EDE0CE;
+    border: 1px solid rgba(223, 160, 75, 0.45);
+    border-radius: 8px;
+    margin: 4px 3px;
+    padding: 0px 9px;
+    font-weight: 800;
+}
+
+/* 6. Botón de Apagado Estilo Sello Carmesí Bad-Blood */
+window#waybar #custom-power {
+    background: linear-gradient(135deg, #C44D41 0%, #8A261D 100%);
+    color: #EDE0CE;
+    border: 1px solid #DFA04B;
+    border-radius: 8px 3px 8px 3px;
+    margin: 4px 4px;
+    padding: 0px 10px;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px rgba(196, 77, 65, 0.65);
+}
+
+/* 7. Efecto Hover Explosivo en Controles */
+window#waybar #network:hover,
+window#waybar #bluetooth:hover,
+window#waybar #pulseaudio:hover,
+window#waybar #battery:hover,
+window#waybar #custom-power:hover,
+window#waybar #custom-theme:hover,
+window#waybar #custom-wallchange:hover {
+    background: linear-gradient(135deg, #DFA04B 0%, #D46A38 100%);
+    color: #110C0A;
+    border-color: #EDE0CE;
+    box-shadow: 0px 0px 12px rgba(223, 160, 75, 0.8);
+}
+
+/* 8. Menús Emergentes (Tooltips / Clic derecho en Wi-Fi y Bluetooth) */
+tooltip,
+menu {
+    background: linear-gradient(145deg, #110C0A 0%, #1E1511 100%);
+    color: #EDE0CE;
+    border: 2px solid #C44D41;
+    border-radius: 12px 4px 12px 4px;
+    padding: 6px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.9);
+}
+
+menuitem {
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #EDE0CE;
+}
+
+menuitem:hover {
+    background: linear-gradient(90deg, #C44D41, #D46A38);
+    color: #110C0A;
+    font-weight: bold;
+}
+/* === TERRA-INK BAD-BLOOD EDITION END === */

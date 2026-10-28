@@ -1,0 +1,22 @@
+[global]
+    frame_color = "#D46A38"
+    separator_color= frame
+    corner_radius = 10
+
+[urgency_low]
+    background = "#1C1613e6"
+    foreground = "#C4B097"
+    frame_color = "#3A2E26"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1C1613f2"
+    foreground = "#EDE0CE"
+    frame_color = "#D46A38"
+    timeout = 8
+
+[urgency_critical]
+    background = "#C44D41f2"
+    foreground = "#1C1613"
+    frame_color = "#DFA04B"
+    timeout = 0
